@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ALEN  VINCENT G | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <h2 class="logo flex-start">ALEN VINCENT G</h2>
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-glass">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+    <p class="nav">+91 8848781581</p>
+  </nav>
+
+  <header>
+    <h1>Hello, I'm <span>Alen Vincent G</span></h1>
+    <p class="typed-text">  UI/UX Designer | Visual Storyteller | GraphicDesigner </p>
+    <a href="#contact" class="btn">Let's Work Together</a>
+  </header>
+
+  <section class="about" id="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="images/profile-photo.jpg" alt="Alen Vincent G">
+      <div class="about-info">
+        <p>Hi There! I'm Alen Vincent G<br>UI/UX Frontend Developer with a strong focus on digital branding.</p>
+        <p>Birthday: May 05, 2004</p>
+        <p>Phone: +91 8848781581</p>
+        <p>Email: alankochupally@gmail.com</p>
+        <p>Freelance: Available</p>
+        <a href="#" class="btn">Download CV</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <h2>Services</h2>
+    <div class="service-grid">
+      
+      <div class="service-box">
+        <h3>UI/UX Design</h3>
+        <p>I design interfaces that are both visually appealing and easy to navigate, ensuring seamless user journeys.</p>
+      </div>
+      <div class="service-box">
+        <h3>Product Design</h3>
+        <p>I focus on solving real user problems through innovative and functional product solutions, combining usability with aesthetic elegance.</p>
+      </div>
+      <div class="service-box">
+        <h3>App Design</h3>
+        <p> Designing sleek, modern mobile applications.
+          I design engaging and responsive app interfaces for Android and iOS, tailored to your brand’s voice and optimized for performance.</p>
+      </div>
+      <div class="service-box">
+        <h3>Poster Design</h3>
+        <p>Visuals that grab attention and communicate clearly.
+          I create eye-catching posters for events, promotions, or social media, tailored to your brand and audience.</p>
+      </div>
+      <div class="service-box">
+        <h3>Visual Storytelling</h3>
+        <p>Crafting compelling moments through lens and motion.
+          From stunning photography to cinematic video production, I bring ideas to life with a modern visual edge.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="skills" id="skills">
+    <h2>My Skills</h2>
+    <p>All the skills that I have in that field of work are mentioned.</p>
+    <div class="bar"><span style="width: 90%;">Photoshop 90%</span></div>
+    <div class="bar"><span style="width: 75%;">Figma 75%</span></div>
+    <div class="bar"><span style="width: 70%;">Pixellu 70%</span></div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: alankochupally@gmail.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Alen Vincent G. All rights reserved.</p>
+  </footer>
+
+<script>
+    const hamburger = document.querySelector('.hamburger');
+    const navGlass = document.querySelector('.nav-glass');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navGlass.classList.toggle('active');
+    });
+
+    // Close menu when clicking a link
+    document.querySelectorAll('.nav-glass a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navGlass.classList.remove('active');
+      });
+    });
+  </script>
+</body>
+</html>
